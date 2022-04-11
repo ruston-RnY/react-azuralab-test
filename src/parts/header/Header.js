@@ -9,11 +9,26 @@ import IcSearch from "../../assets/images/ic-search.svg";
 function Header() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
   const closeMenu = () => setClick(false);
 
+  const [bgColor, setBgColor] = useState(false);
+  const changeBgColor = () => {
+    if (window.scrollY >= 90) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeBgColor);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom bgScroll">
+    <nav
+      className={
+        bgColor
+          ? "navbar navbar-expand-lg navbar-dark navbar-custom bgScroll"
+          : "navbar navbar-expand-lg navbar-dark navbar-custom"
+      }
+    >
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="logo pdam" className="w-100" />

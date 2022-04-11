@@ -1,7 +1,7 @@
 @import "../../assets/scss/variables";
 
 .navbar-custom {
-  position: fixed;
+  position: fixed !important;
   height: 90px;
   width: 100%;
   top: 0;
@@ -10,6 +10,10 @@
   transition: 0.3s ease-in;
   overflow: hidden;
   background: rgba(21, 117, 153, 0.5);
+
+  &.bgScroll {
+    background-color: $primary_color;
+  }
 
   .navbar-brand {
     font-size: 2rem;
@@ -60,9 +64,9 @@
 }
 
 @media screen and (max-width: 991.98px) {
-  &.bgScroll {
-    // background-color: #1b192f;
-  }
+  //   &.bgScroll {
+  //     // background-color: #1b192f;
+  //   }
 
   .nav-menu,
   .actions {
