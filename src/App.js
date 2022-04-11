@@ -1,13 +1,15 @@
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Home from "./pages/home/Home";
+import Header from "./parts/header/Header";
 
 function App() {
   return (
     <div>
-      <div className="container">
-        <p>halo</p>
-        <button className='btn btn-primary'>hay</button>
-
-      </div>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
     </div>
   );
 }
