@@ -24,7 +24,7 @@ function Header() {
   return (
     <nav
       className={
-        bgColor || click
+        bgColor
           ? "navbar navbar-expand-lg navbar-dark navbar-custom bgScroll"
           : "navbar navbar-expand-lg navbar-dark navbar-custom"
       }
