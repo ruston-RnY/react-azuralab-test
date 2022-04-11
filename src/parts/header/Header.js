@@ -24,14 +24,14 @@ function Header() {
   return (
     <nav
       className={
-        bgColor
+        bgColor || click
           ? "navbar navbar-expand-lg navbar-dark navbar-custom bgScroll"
           : "navbar navbar-expand-lg navbar-dark navbar-custom"
       }
     >
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src={Logo} alt="logo pdam" className="w-100" />
+          <img src={Logo} alt="logo pdam" />
         </Link>
         <button className="navbar-toggler" onClick={handleClick}>
           {click ? <FaTimes size={21} /> : <FaBars size={20} />}
@@ -79,14 +79,15 @@ function Header() {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="d-flex actions">
-          <div className="search rounded-lg">
-            <img src={IcSearch} alt="" />
+          <div className="actions">
+            <div className="search rounded-lg">
+              <span>Cari</span>
+              <img src={IcSearch} alt="" />
+            </div>
+            <Button isRounded className="btn-white">
+              Customer Service
+            </Button>
           </div>
-          <Button isRounded className="btn-white">
-            Customer Service
-          </Button>
         </div>
       </div>
     </nav>
