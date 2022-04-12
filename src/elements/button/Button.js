@@ -7,6 +7,9 @@ export default function Button(props) {
 
   if (props.isLarge) className.push("btn-action-lg");
   if (props.isRounded) className.push("rounded-lg");
+  if (props.isBordered) className.push("isBordered");
+  if (props.isBadge === "Pengumuman") className.push("isBadgeRed");
+  if (props.isBadge === "Berita Terbaru") className.push("isBadgeGold");
 
   return (
     <button className={className.join(" ")} style={props.style}>
@@ -17,7 +20,8 @@ export default function Button(props) {
 
 Button.propTypes = {
   className: propTypes.string,
-  isOutline: propTypes.bool,
+  isBordered: propTypes.bool,
   isRounded: propTypes.bool,
   isLarge: propTypes.bool,
+  isBadge: propTypes.string,
 };

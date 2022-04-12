@@ -4,8 +4,8 @@
   overflow-x: hidden;
 
   .whyUs-text {
-    padding: 15%;
-    h4{
+    padding: 17% 15%;
+    h4 {
       font-weight: 600;
     }
   }
@@ -38,22 +38,23 @@
     }
   }
   @media (max-width: 576px) {
-    .whyUs-text{
+    .whyUs-text {
       padding: 10%;
     }
-    .card-support{
-      img{
-        width: 50px;
-        margin: 20px 16px 0 16px;
+    .card-support {
+      img {
+        width: 40px;
+        margin: 20px 12px 0 12px;
       }
-      .card-content{
-        p{
+      .card-content {
+        p {
           margin-top: 1rem;
+          font-size: 12px;
         }
       }
-      .card-2{
+      .card-2 {
         .ic-24 {
-          margin-left: 20px;
+          margin-left: 15px;
         }
       }
     }

@@ -21,3 +21,20 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.isBordered {
+  border: 1px solid $primary_color;
+  background-color: $white;
+}
+
+.isBadgeRed {
+  background-color: $danger;
+  color: $white;
+  font-size: 12px;
+}
+
+.isBadgeGold {
+  background-color: $gold;
+  color: $white;
+  font-size: 12px;
+}
