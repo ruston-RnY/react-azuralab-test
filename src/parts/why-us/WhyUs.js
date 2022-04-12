@@ -8,7 +8,7 @@ export default function WhyUs() {
   return (
     <section className="section-whyUs">
       <div className="row">
-        <div className="col-md-4 p-0">
+        <div className="col-md-4">
           <div className="whyUs-text">
             <h4>Kenapa Memilih Kami?</h4>
             <p>
@@ -17,10 +17,10 @@ export default function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="col-md-8 p-0">
+        <div className="col-md-8">
           <div className="card-support">
             <div className="row m-0 h-100">
-              <div className="col-md-4 p-0">
+              <div className="col-md-4 col-4 p-0">
                 <div className="card-1 h-100">
                   <div className="card-content">
                     <img src={IcPro} alt="profesional" />
@@ -28,7 +28,7 @@ export default function WhyUs() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 p-0">
+              <div className="col-md-4 col-4 p-0">
                 <div className="card-2 h-100">
                   <div className="card-content">
                     <img src={Ic24} alt="24h" className="ic-24" />
@@ -36,7 +36,7 @@ export default function WhyUs() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 p-0">
+              <div className="col-md-4 col-4 p-0">
                 <div className="card-3 h-100">
                   <div className="card-content">
                     <img src={IcSupport} alt="support" />
