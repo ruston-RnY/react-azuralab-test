@@ -1,29 +1,5 @@
 @import "../../assets/scss/variables";
 
-.btn-action-lg {
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 14px;
-  // width: 35%;
-  &:hover {
-    background: #fff;
-    color: #1b192f;
-    font-weight: 500;
-  }
-}
-
-.btn-action-sm {
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 12px;
-  // width: 55%;
-  &:hover {
-    background: #fff;
-    color: #1b192f;
-    font-weight: 500;
-  }
-}
-
 .btn-cs {
   display: inline-block;
   color: $primary_color;
@@ -36,4 +12,12 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-action-lg {
+  width: 170px;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

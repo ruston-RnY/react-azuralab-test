@@ -1,7 +1,76 @@
+@import "../../assets/scss/variables";
+
 .hero-bg {
   background-image: url(../../assets/images/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  color: $white;
+  display: flex;
+
+  .hero-content {
+    margin: auto;
+    .hero-title {
+      font-weight: bold;
+    }
+    .hero-desc {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    .ic-phone {
+      width: 16px;
+    }
+    .social {
+      text-align: right;
+      h6 {
+        transform: rotate(90deg);
+        transform-origin: right top;
+        margin-top: 75px;
+      }
+      .icon-sosmed {
+        display: grid;
+        img {
+          width: 25px;
+          margin-bottom: 2rem;
+          transition: transform 0.5s;
+          &:hover {
+            transform: translateY(-5px);
+          }
+        }
+        .fb {
+          width: 22px;
+        }
+        .yt {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-bg {
+    .hero-content {
+      .hero-title {
+        font-size: 2rem;
+      }
+      .hero-desc {
+        font-size: 1rem;
+      }
+      .social {
+        text-align: left;
+        h6 {
+          transform: unset;
+          margin-top: unset;
+        }
+        .icon-sosmed {
+          display: unset;
+          img {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
