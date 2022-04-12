@@ -1,0 +1,37 @@
+.section-whyUs {
+  background-color: #fff;
+  width: 100%;
+  overflow-x: hidden;
+
+  .whyUs-text {
+    padding: 17% 15%;
+  }
+  .card-support {
+    height: 100%;
+    img {
+      width: 80px;
+    }
+    .card-1 {
+      background: #157599;
+      display: flex;
+    }
+    .card-2 {
+      background: #2093be;
+      display: flex;
+      .ic-24 {
+        margin-left: 10px;
+      }
+    }
+    .card-3 {
+      background: #2eb3e5;
+      display: flex;
+    }
+    .card-content {
+      margin: auto;
+      p {
+        color: #fff;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
