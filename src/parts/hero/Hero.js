@@ -34,7 +34,7 @@ export default function Hero() {
                   <Link to="#facebook">
                     <img src={Fb} alt="fb" className="fb" />
                   </Link>
-                  <Link to="#intagram">
+                  <Link to="#instagram">
                     <img src={Ig} alt="ig" />
                   </Link>
                   <Link to="#twitter">

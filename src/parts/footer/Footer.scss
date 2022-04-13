@@ -1,0 +1,91 @@
+@import "../../assets/scss/variables";
+
+footer {
+  padding: 3rem 0;
+  background-color: $primary_color;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  .pdam-visi {
+    width: 80%;
+    margin: 1.5rem 0;
+    p {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+
+  .sosmed {
+    .fb,
+    .ig {
+      width: 23px;
+    }
+    img {
+      width: 25px;
+      margin-right: 2rem;
+      transition: 0.5s ease;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .navigation {
+    margin-top: 6rem;
+    li {
+      margin: 1rem 0;
+      a {
+        color: rgba(255, 255, 255, 0.582);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 5px 0;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0%;
+          width: 0;
+          transition: width 0.3s ease;
+          height: 2px;
+          background-color: $white;
+        }
+
+        &.active,
+        &:hover {
+          color: $white;
+        }
+        &.active::after,
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .address {
+    margin-top: 6rem;
+    li {
+      font-weight: 400;
+      color: $white;
+      .addres-wrap {
+        display: grid;
+        grid-template-columns: 15% 85%;
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navigation,
+    .address {
+      margin-top: 3rem;
+    }
+  }
+}
