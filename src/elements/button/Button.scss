@@ -58,3 +58,13 @@
   color: $white;
   font-size: 12px;
 }
+
+@media(max-width: 576px) {
+  .btn-lg-noIcon {
+    width: 100%;
+  }
+  
+  .btn-lg-colored {
+    width: 100%;
+  }
+}

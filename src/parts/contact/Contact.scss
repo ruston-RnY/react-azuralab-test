@@ -1,9 +1,34 @@
 .contact{
-  margin: 5rem 0;
-  h3{
-    font-weight: bold;
+  margin: 120px 0;
+  .contact-wrap{
+    display: flex;
+    .contact-content{
+      h3{
+        font-weight: bold;
+      }
+    }
+    .contact-img{
+      img{
+        max-width: 150px;
+      }
+    }
   }
-  img{
-    max-width: 150px;
+
+  @media(max-width: 576px){
+    margin: 40px 0;
+    .contact-wrap{
+      padding: 1.5rem;
+      display: grid;
+      .contact-content{
+        order: 2;
+        h3{
+          font-size: 22px;
+        }
+      }
+      .contact-img{
+        order: 1;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
