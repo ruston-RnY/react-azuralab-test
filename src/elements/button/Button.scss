@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.btn-long {
+  width: 190px;
+}
+
 .isBordered {
   border: 1px solid $primary_color;
   background-color: $white;

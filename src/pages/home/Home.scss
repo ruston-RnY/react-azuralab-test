@@ -33,6 +33,16 @@
         font-size: 14px;
         margin-bottom: 0;
       }
+      @media (max-width: 576px) {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+
+  .slider {
+    .slider-bg {
+      background: #e0e0e0;
+      border-radius: 10px;
     }
   }
 }

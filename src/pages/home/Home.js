@@ -8,6 +8,8 @@ import card2 from "../../assets/images/card2.png";
 import card3 from "../../assets/images/card3.png";
 import Tick from "../../assets/images/tick.svg";
 import Profile from "../../assets/images/profile.png";
+import Slider from "../../elements/slider/Slider";
+import Button from "../../elements/button/Button";
 
 export default function Home() {
   const news = [
@@ -32,7 +34,8 @@ export default function Home() {
     <div className="home-page">
       <Hero></Hero>
       <WhyUs></WhyUs>
-      <section className="news pt-3 mt-5">
+
+      <section className="news pt-4 mt-5">
         <div className="text-center px-4">
           <h4>Ikuti Pengumuman Terbaru Kami</h4>
           <p>Jangan sampai ketinggalan pengumuman hingga berita terbaru kami</p>
@@ -51,7 +54,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="profile pt-3 mt-5">
+
+      <section className="slider pt-4 mt-5">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="slider-bg">
+                <Slider className="slider-home"></Slider>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="profile pt-4 mt-5">
         <div className="row justify-content-center">
           <div className="col-md-8">
             <div className="profile-title mb-4">
@@ -83,6 +99,13 @@ export default function Home() {
                   <h6>Ir.H.Ady Setiawan.SH</h6>
                   <p>President of PDAM Purwa Tirta Dharma</p>
                 </div>
+              </div>
+            </div>
+            <div className="row mt-5">
+              <div className="col-12 d-flex">
+                <Button isBordered isLong className="m-auto mt-5">
+                  Lebih Lengkap
+                </Button>
               </div>
             </div>
           </div>

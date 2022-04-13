@@ -1,0 +1,20 @@
+.slider {
+  .carousel {
+    .slide {
+      display: flex;
+      height: 300px;
+      @media (max-width: 576px) {
+        height: 200px;
+      }
+      .carousel-img {
+        margin: auto;
+        img {
+          max-width: 125px;
+        }
+      }
+    }
+  }
+  .carousel .control-dots .dot {
+    background: #000;
+  }
+}
