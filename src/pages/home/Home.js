@@ -1,10 +1,13 @@
 import React from "react";
+import "./Home.scss";
 import Cards from "../../elements/cards/Cards";
 import Hero from "../../parts/hero/Hero";
 import WhyUs from "../../parts/why-us/WhyUs";
 import card1 from "../../assets/images/card1.png";
 import card2 from "../../assets/images/card2.png";
 import card3 from "../../assets/images/card3.png";
+import Tick from "../../assets/images/tick.svg";
+import Profile from "../../assets/images/profile.png";
 
 export default function Home() {
   const news = [
@@ -26,7 +29,7 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="home-page">
       <Hero></Hero>
       <WhyUs></WhyUs>
       <section className="news pt-3 mt-5">
@@ -45,6 +48,43 @@ export default function Home() {
                 ></Cards>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="profile pt-3 mt-5">
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            <div className="profile-title mb-4">
+              <img src={Tick} alt="tick" />
+              <h3>
+                Mari Kenali Kami <br /> dan Perjalanan Kami{" "}
+              </h3>
+            </div>
+            <div className="row justify-content-around">
+              <div className="col-md-5">
+                <Cards isText className="p-4 card-text h-100">
+                  <p className="m-0">
+                    “ Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                    ad minim veniam, quis nostrud Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore “.
+                  </p>
+                </Cards>
+              </div>
+              <div className="col-md-5">
+                <div className="profile-img">
+                  <img src={Profile} alt="" />
+                </div>
+                <div className="profile-detail">
+                  <h6>Ir.H.Ady Setiawan.SH</h6>
+                  <p>President of PDAM Purwa Tirta Dharma</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
