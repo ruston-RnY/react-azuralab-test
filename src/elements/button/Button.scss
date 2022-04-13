@@ -22,13 +22,29 @@
   align-items: center;
 }
 
-.btn-long {
-  width: 190px;
+.btn-lg-noIcon{
+  width: 210px;
+  padding: 0.9rem;
+  border: 2px solid $primary_color;
 }
 
-.isBordered {
-  border: 1px solid $primary_color;
+.btn-lg-colored{
+  width: 210px;
+  padding: 0.9rem;
+  background-color: $primary_color;
+  color: $white;
+  border: 2px solid $primary_color;
+}
+
+.btn-long {
+  width: 190px;
+  background-color: transparent;
+  border: 2px solid $primary_color;
+}
+
+.btn-bordered-sm{
   background-color: $white;
+  border: 1px solid $primary_color;
 }
 
 .isBadgeRed {

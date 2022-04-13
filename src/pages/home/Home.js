@@ -10,6 +10,8 @@ import Tick from "../../assets/images/tick.svg";
 import Profile from "../../assets/images/profile.png";
 import Slider from "../../elements/slider/Slider";
 import Button from "../../elements/button/Button";
+import Contact from "../../parts/contact/Contact";
+
 
 export default function Home() {
   const news = [
@@ -111,6 +113,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Contact className="pt-5"></Contact>
+      
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel
         minima nihil explicabo quas quisquam dignissimos cupiditate distinctio

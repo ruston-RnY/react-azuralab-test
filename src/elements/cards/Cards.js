@@ -18,7 +18,7 @@ function Cards(props) {
           <img src={props.data.image} className="card-img-top" alt="..." />
           <div className="card-body px-0 pb-0">
             <h5 className="card-title">{props.data.title}</h5>
-            <Button isBordered>Lebih Lanjut</Button>
+            <Button isBorderedSm>Lebih Lanjut</Button>
           </div>
         </div>
       </section>
