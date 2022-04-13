@@ -12,6 +12,11 @@
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+    // filter: drop-shadow(2px 4px 6px black);
+  }
 }
 
 .btn-action-lg {
@@ -22,13 +27,13 @@
   align-items: center;
 }
 
-.btn-lg-noIcon{
+.btn-lg-noIcon {
   width: 210px;
   padding: 0.9rem;
   border: 2px solid $primary_color;
 }
 
-.btn-lg-colored{
+.btn-lg-colored {
   width: 210px;
   padding: 0.9rem;
   background-color: $primary_color;
@@ -42,7 +47,7 @@
   border: 2px solid $primary_color;
 }
 
-.btn-bordered-sm{
+.btn-bordered-sm {
   background-color: $white;
   border: 1px solid $primary_color;
 }
@@ -59,11 +64,11 @@
   font-size: 12px;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   .btn-lg-noIcon {
     width: 100%;
   }
-  
+
   .btn-lg-colored {
     width: 100%;
   }

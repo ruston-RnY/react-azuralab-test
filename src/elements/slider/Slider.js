@@ -14,7 +14,11 @@ const Slider = (props) => {
         showStatus={false}
         autoPlay={true}
         showArrows={false}
+        infiniteLoop={true}
       >
+        <div className="carousel-img">
+          <img src={second} alt="e" />
+        </div>
         <div className="carousel-img">
           <img src={second} alt="e" />
         </div>
