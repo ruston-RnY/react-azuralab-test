@@ -2,7 +2,7 @@
 
 This project created using react js
 
-Name : Ruston Efendi
+Name : Ruston Efendi <br>
 Email : ruztonchiqiute93@gmail.com
 
 ## Demo
