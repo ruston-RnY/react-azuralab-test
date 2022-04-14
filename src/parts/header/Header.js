@@ -30,7 +30,7 @@ function Header() {
       }
     >
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/" onClick={closeMenu}>
           <img src={Logo} alt="logo pdam" />
         </Link>
         <button className="navbar-toggler" onClick={handleClick}>

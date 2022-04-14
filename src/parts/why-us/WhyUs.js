@@ -22,7 +22,11 @@ export default function WhyUs() {
             <div className="row m-0 h-100">
               <div className="col-md-4 col-4 p-0">
                 <div className="card-1 h-100">
-                  <div className="card-content">
+                  <div
+                    className="card-content"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
                     <img src={IcPro} alt="profesional" />
                     <p>Profesional</p>
                   </div>
@@ -30,7 +34,11 @@ export default function WhyUs() {
               </div>
               <div className="col-md-4 col-4 p-0">
                 <div className="card-2 h-100">
-                  <div className="card-content">
+                  <div
+                    className="card-content"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                  >
                     <img src={Ic24} alt="24h" className="ic-24" />
                     <p>24H Non-Stop</p>
                   </div>
@@ -38,7 +46,11 @@ export default function WhyUs() {
               </div>
               <div className="col-md-4 col-4 p-0">
                 <div className="card-3 h-100">
-                  <div className="card-content">
+                  <div
+                    className="card-content"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                  >
                     <img src={IcSupport} alt="support" />
                     <p>Full Support</p>
                   </div>

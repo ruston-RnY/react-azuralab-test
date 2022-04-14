@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.scss";
 import Cards from "../../elements/cards/Cards";
 import Hero from "../../parts/hero/Hero";
@@ -12,6 +12,8 @@ import Slider from "../../elements/slider/Slider";
 import Button from "../../elements/button/Button";
 import Contact from "../../parts/contact/Contact";
 import Footer from "../../parts/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const news = [
@@ -32,13 +34,20 @@ export default function Home() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="home-page">
       <Hero></Hero>
       <WhyUs></WhyUs>
 
       <section className="news pt-4 mt-5">
-        <div className="text-center px-4">
+        <div className="text-center px-4" data-aos="fade-up">
           <h4>Ikuti Pengumuman Terbaru Kami</h4>
           <p>Jangan sampai ketinggalan pengumuman hingga berita terbaru kami</p>
         </div>
@@ -48,6 +57,7 @@ export default function Home() {
               <div className="col-md-4 p-4" key={i}>
                 <Cards
                   data={item}
+                  delayInMs={i * 100}
                   isProduct
                   className="px-4 pt-4 pb-3 card-product"
                 ></Cards>
@@ -69,7 +79,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="profile pt-4 mt-5">
+      <section className="profile pt-4 mt-5" data-aos="zoom-in">
         <div className="row justify-content-center">
           <div className="col-md-8">
             <div className="profile-title mb-4">

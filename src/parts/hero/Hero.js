@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="hero-content">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 mb-4">
+            <div className="col-md-6 mb-4" data-aos="zoom-in">
               <h1 className="hero-title">
                 Menjadi Perusahaan <br /> Air Minum Modern
               </h1>
@@ -28,7 +28,7 @@ export default function Hero() {
               </Button>
             </div>
             <div className="col-md-6">
-              <div className="social">
+              <div className="social" data-aos="zoom-in">
                 <h6>Social Media</h6>
                 <div className="icon-sosmed">
                   <Link to="#facebook">

@@ -8,7 +8,11 @@ function Cards(props) {
 
   if (props.isProduct) {
     return (
-      <section className="card-section">
+      <section
+        className="card-section"
+        data-aos="fade-up"
+        data-aos-delay={props.delayInMs}
+      >
         <div className="d-flex">
           <Button isBadge={props.data.category} className="mx-auto mb-3">
             {props.data.category}
@@ -36,3 +40,7 @@ Cards.propTypes = {
 };
 
 export default Cards;
+
+Cards.propTypes = {
+  delayInMs: propTypes.number,
+};
